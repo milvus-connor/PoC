@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>삼성전자 내부 POC 테스트 페이지</title>
+        <link rel="stylesheet" href="https://img.milvusapp.com/pub/connor/test_img/reset.css" />
+    </head>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        .wrap {
+            position: relative;
+            margin: 0;
+            padding: 0;
+        }
+        .wrap img {
+            width: 100%;
+        }
+        .contents {
+            position: relative;
+        }
+        .el img {
+            width: 100%;
+        }
+        .el-pc {
+            display: block;
+        }
+        .el-mobile {
+            display: none;
+        }
+        .link {
+            position: absolute;
+            display: block;
+            background: transparent;
+        }
+        .home-link-pc {
+            top: 1.67vw;
+            left: 12.74vw;
+            width: 5.81vw;
+            height: 1vw;
+        }
+        .list-link-pc {
+            top: 69.7vw;
+            left: 50.1vw;
+            width: 17.2vw;
+            height: 17.05vw;
+        }
+        @media all and (max-width: 700px) {
+            .el-pc {
+                display: none;
+            }
+            .el-mobile {
+                display: block;
+            }
+        }
+    </style>
+    <body>
+        <script type="text/javascript" src="//cdn.evgnet.com/beacon/jkim523005915/grcm/scripts/evergage.min.js"></script>
+        <div class="wrap">
+            <div class="contents">
+                <div class="el-pc el">
+                    <img src="https://img.milvusapp.com/pub/connor/test_img/samsung_detail2.jpg" alt="pc" />
+                </div>
+                <div class="el-mobile el">
+                    <img src="https://img.milvusapp.com/pub/connor/test_img/samsung_mobile.jpeg" alt="mobile" />
+                </div>
+                <a href="./samsung_poc.html" class="link home-link-pc"></a>
+                <a href="./samsung_poc.html" class="link list-link-pc"></a>
+            </div>
+        </div>
+    </body>
+</html>
